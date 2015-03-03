@@ -1,37 +1,14 @@
-<android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" 
-    android:id="@+id/drawer_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <!-- 显示主要内容的视图 -->
-    <com.baidu.mapapi.map.MapView  
-    	android:id="@+id/id_bmapView"  
-    	android:layout_width="fill_parent"  
-    	android:layout_height="fill_parent"  
-    	android:clickable="true" />
-    
-    <!-- 左侧的导航视图 -->
-    <ListView android:id="@+id/left_drawer"
-        android:layout_width="240dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:choiceMode="singleChoice"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="0dp"
-        android:background="#ffffcc"/>
-    	
-
-    <!-- 覆盖物描述的布局 -->
-    <RelativeLayout
-    	android:id="@+id/id_maker_ly"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_maker_ly"
     	android:layout_width="match_parent"
     	android:layout_height="220dp"
     	android:layout_alignParentBottom="true"
     	android:background="#cc4e5a6b"
-    	android:clickable="false"
-    	android:visibility="gone" >
-    	
-    	<!-- 显示相关的图片 -->
+    	android:clickable="true"
+    	android:visibility="visible" >
+    
+    <!-- 显示相关的图片 -->
     	<ImageView 
         	android:id="@+id/id_info_img"
         	android:layout_width="fill_parent"
@@ -99,11 +76,7 @@
                 	android:textColor="#fff5eb" />
         	
         	</LinearLayout>
-        	
-        	
+
         </RelativeLayout>
-    
 
-    </RelativeLayout>
-
- </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
